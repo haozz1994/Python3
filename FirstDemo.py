@@ -6,4 +6,5 @@ if __name__ == '__main__':
 
 def demoMethod2():
     print("Hello, This is my second Python;")
+    print("Hello, This is my second Python;")
 
