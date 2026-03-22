@@ -64,7 +64,8 @@ class DoubanCrawler:
         response = self.session.get(url, timeout=30)
         response.raise_for_status()
         
-        soup = BeautifulSoup(response.text, 'lxml')
+        # 让requests自动处理编码
+        soup = BeautifulSoup(response.text, 'html.parser')
         items = soup.find_all('div', class_='item')
         
         movies = []

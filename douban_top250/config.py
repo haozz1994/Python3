@@ -8,7 +8,7 @@
 MYSQL_HOST = "localhost"
 MYSQL_PORT = 3306
 MYSQL_USER = "root"           # 修改为你的MySQL用户名
-MYSQL_PASSWORD = "123456"     # 修改为你的MySQL密码
+MYSQL_PASSWORD = "503347"     # 修改为你的MySQL密码
 MYSQL_DATABASE = "douban"     # 数据库名
 
 # 数据库连接URL
@@ -21,10 +21,9 @@ BASE_URL = "https://movie.douban.com/top250"
 # 请求头（模拟浏览器访问）
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
+    # 不设置 Accept-Encoding，让 requests 自动处理
 }
 
 # 每页电影数量
